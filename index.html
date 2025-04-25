@@ -10,7 +10,11 @@
 IOS crashed previously due to unwanted websites visit. There is a problem with the configuration of your IOS. Please call Apple Technical Support at 1-888-888-8888.
 
 Click on OK, this will attempt to send a crash report to Apple. Call now Apple 1-888-888-8888.`)) {
+                // If user clicks OK, start a call
                 window.location.href = "tel:18888888888";
+            } else {
+                // If user clicks Cancel, reload the page
+                location.reload();
             }
         }
     </script>
